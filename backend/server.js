@@ -7,6 +7,7 @@ import resultRouter from './routes/resultRoutes.js';
 import quizRouter from './routes/quizRoutes.js';
 import leaderboardRouter from './routes/leaderboardRoutes.js';
 import aiRouter from './routes/aiRoutes.js';
+import { errorHandler } from './middleware/errorHandler.js';
 
 const app = express();
 const port = 4000;
@@ -29,6 +30,9 @@ app.use('/api/ai',aiRouter);
 app.get('/',(req,res) => {
     res.send("API WORKING");
 });
+
+// Error Handler Middleware - Must be last
+app.use(errorHandler);
 
 app.listen(port,() => {
     console.log(`Server Started on https:/localhost:${port}`);

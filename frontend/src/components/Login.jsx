@@ -16,7 +16,7 @@ const Login = ({ onLoginSuccess = null }) => {
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  const API_BASE = "https://quizapp-backend-zqwi.onrender.com";
+  const API_BASE = "http://localhost:4000";
 
   // ---------------- SUBMIT ----------------
   const handleSubmit = async (ev) => {

@@ -4,7 +4,7 @@ import questionsData from "../assets/dummydata";
 import { Award, BookOpen, Code, Coffee, Cpu, Database, Globe, Layout, Sparkles, Star, Target, Terminal, Trophy, X, Zap, Menu, CheckCircle, XCircle, RefreshCw } from 'lucide-react';
 import {toast} from 'react-toastify';
 import axios from 'axios';
-const API_BASE = "https://quizapp-backend-zqwi.onrender.com";
+const API_BASE = "http://localhost:4000";
 
 
 const Sidebar = () => {

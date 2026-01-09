@@ -14,7 +14,7 @@ const Badge = ({ percent }) => {
   return <span className={resultStyles.badgeNeedsWork}>Needs Work</span>;
 };
 
-const MyResult = ({ apiBase = "https://quizapp-backend-zqwi.onrender.com" }) => {
+const MyResult = ({ apiBase = "http://localhost:4000" }) => {
 const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
